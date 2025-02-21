@@ -1,38 +1,146 @@
-.App {
-  text-align: center;
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px; 
+  padding: 20px 0;
+  width: 100%;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo {
+  width: 240px; 
+  height: auto;
+  margin-bottom: 8px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  text-align: center;
+  margin-bottom: 24px;
+}
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  transition: transform 0.2s ease-in-out;
+  width: 100%; 
+  max-width: 500px;
+}
+
+.menu-cursive {
+  font-size: 1.2rem;
+  color: #b5764a;
+  font-family: "Dancing Script", cursive;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.menu-item-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.menu-item-info {
+  flex: 1;
+}
+
+.title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.description {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.button-separator {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.add-button {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: 8px 16px;
+  border-radius: 16px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+
+.adder {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.adder button {
+  width: 20px;  
+  height: 20px;
+  border-radius: 50%; 
+  background-color: white;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #f1f1f1;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; 
+  border-top: 2px solid #ccc;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  gap: 15px; 
+  flex-wrap: wrap; 
+}
+
+.subtotal {
+  font-weight: bold;
+  white-space: nowrap; 
+  margin-right: 15px;
+}
+
+.cart-btn {
+  padding: 8px 15px;
+  border: none;
+  background: #999;
   color: white;
+  border-radius: 15px;
+  cursor: pointer;
+  white-space: nowrap; 
+  margin-left: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.cart-btn:hover {
+  opacity: 0.8;
+  background: rgb(142, 178, 248);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+body {
+  margin-bottom: 80px;
 }
